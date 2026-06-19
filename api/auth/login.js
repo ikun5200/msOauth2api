@@ -1,4 +1,4 @@
-const { generateCodeVerifier, generateCodeChallenge } = require('../utils');
+const { generateCodeVerifier, generateCodeChallenge } = require('../../lib/oauth-utils');
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'GET') {

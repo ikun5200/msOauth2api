@@ -1,4 +1,4 @@
-const { getAccessToken } = require('./utils');
+const { getAccessToken } = require('../lib/oauth-utils');
 
 module.exports = async (req, res) => {
   const params = req.method === 'GET' ? req.query : req.body;

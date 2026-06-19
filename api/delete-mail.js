@@ -4,7 +4,7 @@ const {
   getAccessToken,
   graphApi,
   validatePassword
-} = require('./utils');
+} = require('../lib/oauth-utils');
 
 module.exports = async (req, res) => {
   if (!validatePassword(req, res)) return;

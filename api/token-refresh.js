@@ -1,4 +1,4 @@
-const { refreshTokens, isRefreshTokenInvalid, validatePassword } = require('./utils');
+const { refreshTokens, isRefreshTokenInvalid, validatePassword } = require('../lib/oauth-utils');
 
 module.exports = async (req, res) => {
   if (req.method !== 'GET' && req.method !== 'POST') {

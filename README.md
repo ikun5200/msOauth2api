@@ -105,6 +105,7 @@ Azure Portal 中建议配置：
 ```
 
 兼容增强版接口 `/api/token-refresh`，返回更完整的 Refresh Token 状态信息。
+在 Vercel Hobby 计划中，`/api/refresh-token` 通过 rewrite 指向 `/api/token-refresh`，不额外占用函数数量。
 
 ### 🔍 检测 Token 能力
 

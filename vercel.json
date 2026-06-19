@@ -9,6 +9,20 @@
       "maxDuration": 60
     }
   },
+  "rewrites": [
+    {
+      "source": "/api/refresh-token",
+      "destination": "/api/token-refresh"
+    },
+    {
+      "source": "/api/clear-inbox",
+      "destination": "/api/process-inbox"
+    },
+    {
+      "source": "/api/clear-junk",
+      "destination": "/api/process-junk"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",

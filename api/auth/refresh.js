@@ -1,4 +1,4 @@
-const { refreshTokens } = require('../utils');
+const { refreshTokens } = require('../../lib/oauth-utils');
 
 module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {

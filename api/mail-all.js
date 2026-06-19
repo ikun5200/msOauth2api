@@ -6,7 +6,7 @@ const {
   graphApi,
   normalizeGraphMailbox,
   validatePassword
-} = require('./utils');
+} = require('../lib/oauth-utils');
 
 const ALLOWED_MAILBOXES = ['INBOX', 'Junk'];
 
